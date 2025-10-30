@@ -328,7 +328,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <label for="name">Nama Lengkap</label>
                     <input type="text" id="name" name="name" class="auth-form-control" 
                            placeholder="Masukkan nama lengkap Anda" required 
-                           value="<?= isset($_POST['name']) ? htmlspecialchars($_POST['name']) : '' ?>">
+                           value="<?= isset($_POST['full_name']) ? htmlspecialchars($_POST['name']) : '' ?>">
                 </div>
 
                 <div class="auth-form-group">
